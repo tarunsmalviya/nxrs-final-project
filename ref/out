@@ -1,0 +1,405 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  ms/call  ms/call  name    
+ 46.67      0.14     0.14        5    28.00    28.02  SimpELEN::initUniformGrid(int)
+ 13.33      0.18     0.04        1    40.00    40.00  SimpQEM::initQuadrics()
+ 10.00      0.21     0.03    21823     0.00     0.00  SimpELEN::isCrownInCell(Point*)
+ 10.00      0.24     0.03     1455     0.02     0.02  Surface::collapse(Edge&)
+  6.67      0.26     0.02        1    20.00    38.38  SimpQEM::initEdgeCosts()
+  3.33      0.27     0.01   302476     0.00     0.00  copyQuadrics(double (*) [4], double (*) [4])
+  3.33      0.28     0.01   113557     0.00     0.00  SimpQEM::getCost(Edge*)
+  3.33      0.29     0.01        1    10.00    10.00  Surface::readSurface(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+  3.33      0.30     0.01        1    10.00    10.00  Surface::saveOFF(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+  0.00      0.30     0.00   480023     0.00     0.00  gettime(timespec&)
+  0.00      0.30     0.00   472299     0.00     0.00  void std::vector<Point*, std::allocator<Point*> >::_M_realloc_insert<Point* const&>(__gnu_cxx::__normal_iterator<Point**, std::vector<Point*, std::allocator<Point*> > >, Point* const&)
+  0.00      0.30     0.00   351107     0.00     0.00  void std::vector<Face*, std::allocator<Face*> >::_M_realloc_insert<Face* const&>(__gnu_cxx::__normal_iterator<Face**, std::vector<Face*, std::allocator<Face*> > >, Face* const&)
+  0.00      0.30     0.00   323244     0.00     0.00  sumQuadrics(double (*) [4], double (*) [4])
+  0.00      0.30     0.00   247002     0.00     0.00  getNanoseconds(timespec)
+  0.00      0.30     0.00   246357     0.00     0.00  diff(timespec, timespec)
+  0.00      0.30     0.00   208353     0.00     0.00  Vector3f::cross(Vector3f*)
+  0.00      0.30     0.00   208353     0.00     0.00  Vector3f::normalize()
+  0.00      0.30     0.00   187274     0.00     0.00  void std::vector<Edge*, std::allocator<Edge*> >::_M_realloc_insert<Edge* const&>(__gnu_cxx::__normal_iterator<Edge**, std::vector<Edge*, std::allocator<Edge*> > >, Edge* const&)
+  0.00      0.30     0.00   152205     0.00     0.00  void std::__adjust_heap<__gnu_cxx::__normal_iterator<Edge*, std::vector<Edge, std::allocator<Edge> > >, long, Edge, __gnu_cxx::__ops::_Iter_comp_iter<std::less<Edge> > >(__gnu_cxx::__normal_iterator<Edge*, std::vector<Edge, std::allocator<Edge> > >, long, long, Edge, __gnu_cxx::__ops::_Iter_comp_iter<std::less<Edge> >)
+  0.00      0.30     0.00   113926     0.00     0.00  SimpELEN::setPlacement(Edge*)
+  0.00      0.30     0.00    12237     0.00     0.00  SimpELEN::isEntirelyInCell(Edge*)
+  0.00      0.30     0.00     9148     0.00     0.00  void std::vector<Edge, std::allocator<Edge> >::_M_realloc_insert<Edge const&>(__gnu_cxx::__normal_iterator<Edge*, std::vector<Edge, std::allocator<Edge> > >, Edge const&)
+  0.00      0.30     0.00     6384     0.00     0.00  SimpVertexClustering::initCells()
+  0.00      0.30     0.00     1338     0.00     0.02  SimpQEM::updateEdgeCosts(Point*, int)
+  0.00      0.30     0.00       25     0.00     0.00  frame_dummy
+  0.00      0.30     0.00       18     0.00     0.00  void std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_M_realloc_insert<std::pair<int, int> >(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, std::pair<int, int>&&)
+  0.00      0.30     0.00       18     0.00     0.00  void std::vector<double, std::allocator<double> >::_M_realloc_insert<double const&>(__gnu_cxx::__normal_iterator<double*, std::vector<double, std::allocator<double> > >, double const&)
+  0.00      0.30     0.00       18     0.00     0.00  void std::vector<int, std::allocator<int> >::_M_realloc_insert<int>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int&&)
+  0.00      0.30     0.00       17     0.00     0.00  _GLOBAL__sub_I__Z10initMatrixPA4_i
+  0.00      0.30     0.00       17     0.00     0.00  _GLOBAL__sub_I__Z4diff8timespecS_
+  0.00      0.30     0.00       17     0.00     0.00  _GLOBAL__sub_I__Z4distP5PointS0_
+  0.00      0.30     0.00       17     0.00     0.00  _GLOBAL__sub_I_main
+  0.00      0.30     0.00        6     0.00     0.00  getMilliseconds(timespec)
+  0.00      0.30     0.00        2     0.00     0.00  std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&&, char const*)
+  0.00      0.30     0.00        1     0.00     0.00  CGAL::Interval_nt<true>::Test_runtime_rounding_modes::Test_runtime_rounding_modes()
+  0.00      0.30     0.00        1     0.00   280.00  SimpQEM::simplify(int, int)
+  0.00      0.30     0.00        1     0.00     0.00  SimpQEM::SimpQEM(Surface*, int)
+  0.00      0.30     0.00        1     0.00    10.00  Surface::Surface(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+  0.00      0.30     0.00        1     0.00     0.00  Surface::~Surface()
+  0.00      0.30     0.00        1     0.00     0.00  SimpELEN::SimpELEN(Surface*, int)
+  0.00      0.30     0.00        1     0.00     0.00  std::__cxx11::to_string(int)
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012-2022 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 4 byte(s) for 3.33% of 0.30 seconds
+
+index % time    self  children    called     name
+                                                 <spontaneous>
+[1]    100.0    0.00    0.30                 main [1]
+                0.00    0.28       1/1           SimpQEM::simplify(int, int) [2]
+                0.00    0.01       1/1           Surface::Surface(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [13]
+                0.01    0.00       1/1           Surface::saveOFF(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [12]
+                0.00    0.00       8/25          frame_dummy [15]
+                0.00    0.00       2/2           std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&&, char const*) [42]
+                0.00    0.00       1/1           std::__cxx11::to_string(int) [47]
+                0.00    0.00       1/1           Surface::~Surface() [45]
+                0.00    0.00       1/1           SimpQEM::SimpQEM(Surface*, int) [44]
+-----------------------------------------------
+                0.00    0.28       1/1           main [1]
+[2]     93.3    0.00    0.28       1         SimpQEM::simplify(int, int) [2]
+                0.14    0.00       5/5           SimpELEN::initUniformGrid(int) [3]
+                0.04    0.00       1/1           SimpQEM::initQuadrics() [4]
+                0.02    0.02       1/1           SimpQEM::initEdgeCosts() [5]
+                0.00    0.03    1338/1338        SimpQEM::updateEdgeCosts(Point*, int) [6]
+                0.03    0.00    1455/1455        Surface::collapse(Edge&) [8]
+                0.00    0.00    2985/302476      copyQuadrics(double (*) [4], double (*) [4]) [10]
+                0.00    0.00    2956/152205      void std::__adjust_heap<__gnu_cxx::__normal_iterator<Edge*, std::vector<Edge, std::allocator<Edge> > >, long, Edge, __gnu_cxx::__ops::_Iter_comp_iter<std::less<Edge> > >(__gnu_cxx::__normal_iterator<Edge*, std::vector<Edge, std::allocator<Edge> > >, long, long, Edge, __gnu_cxx::__ops::_Iter_comp_iter<std::less<Edge> >) [14]
+                0.00    0.00    1506/323244      sumQuadrics(double (*) [4], double (*) [4]) [24]
+                0.00    0.00    1445/247002      getNanoseconds(timespec) [25]
+                0.00    0.00    1337/246357      diff(timespec, timespec) [26]
+                0.00    0.00       6/6           getMilliseconds(timespec) [41]
+-----------------------------------------------
+                0.14    0.00       5/5           SimpQEM::simplify(int, int) [2]
+[3]     46.7    0.14    0.00       5         SimpELEN::initUniformGrid(int) [3]
+                0.00    0.00  149249/152205      void std::__adjust_heap<__gnu_cxx::__normal_iterator<Edge*, std::vector<Edge, std::allocator<Edge> > >, long, Edge, __gnu_cxx::__ops::_Iter_comp_iter<std::less<Edge> > >(__gnu_cxx::__normal_iterator<Edge*, std::vector<Edge, std::allocator<Edge> > >, long, long, Edge, __gnu_cxx::__ops::_Iter_comp_iter<std::less<Edge> >) [14]
+                0.00    0.00   55576/472299      void std::vector<Point*, std::allocator<Point*> >::_M_realloc_insert<Point* const&>(__gnu_cxx::__normal_iterator<Point**, std::vector<Point*, std::allocator<Point*> > >, Point* const&) [22]
+                0.00    0.00    9060/9148        void std::vector<Edge, std::allocator<Edge> >::_M_realloc_insert<Edge const&>(__gnu_cxx::__normal_iterator<Edge*, std::vector<Edge, std::allocator<Edge> > >, Edge const&) [32]
+-----------------------------------------------
+                0.04    0.00       1/1           SimpQEM::simplify(int, int) [2]
+[4]     13.3    0.04    0.00       1         SimpQEM::initQuadrics() [4]
+                0.00    0.00  208353/323244      sumQuadrics(double (*) [4], double (*) [4]) [24]
+                0.00    0.00  208353/208353      Vector3f::cross(Vector3f*) [27]
+                0.00    0.00  208353/208353      Vector3f::normalize() [28]
+-----------------------------------------------
+                0.02    0.02       1/1           SimpQEM::simplify(int, int) [2]
+[5]     12.8    0.02    0.02       1         SimpQEM::initEdgeCosts() [5]
+                0.01    0.00  104288/113557      SimpQEM::getCost(Edge*) [9]
+                0.01    0.00  173739/302476      copyQuadrics(double (*) [4], double (*) [4]) [10]
+                0.00    0.00  208353/472299      void std::vector<Point*, std::allocator<Point*> >::_M_realloc_insert<Point* const&>(__gnu_cxx::__normal_iterator<Point**, std::vector<Point*, std::allocator<Point*> > >, Point* const&) [22]
+                0.00    0.00  208353/351107      void std::vector<Face*, std::allocator<Face*> >::_M_realloc_insert<Face* const&>(__gnu_cxx::__normal_iterator<Face**, std::vector<Face*, std::allocator<Face*> > >, Face* const&) [23]
+                0.00    0.00  185034/187274      void std::vector<Edge*, std::allocator<Edge*> >::_M_realloc_insert<Edge* const&>(__gnu_cxx::__normal_iterator<Edge**, std::vector<Edge*, std::allocator<Edge*> > >, Edge* const&) [29]
+                0.00    0.00      18/9148        void std::vector<Edge, std::allocator<Edge> >::_M_realloc_insert<Edge const&>(__gnu_cxx::__normal_iterator<Edge*, std::vector<Edge, std::allocator<Edge> > >, Edge const&) [32]
+                0.00    0.00      18/18          void std::vector<int, std::allocator<int> >::_M_realloc_insert<int>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int&&) [36]
+                0.00    0.00      18/18          void std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_M_realloc_insert<std::pair<int, int> >(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, std::pair<int, int>&&) [34]
+                0.00    0.00      18/18          void std::vector<double, std::allocator<double> >::_M_realloc_insert<double const&>(__gnu_cxx::__normal_iterator<double*, std::vector<double, std::allocator<double> > >, double const&) [35]
+-----------------------------------------------
+                0.00    0.03    1338/1338        SimpQEM::simplify(int, int) [2]
+[6]     10.5    0.00    0.03    1338         SimpQEM::updateEdgeCosts(Point*, int) [6]
+                0.03    0.00   21823/21823       SimpELEN::isCrownInCell(Point*) [7]
+                0.00    0.00    9269/113557      SimpQEM::getCost(Edge*) [9]
+                0.00    0.00    8887/302476      copyQuadrics(double (*) [4], double (*) [4]) [10]
+                0.00    0.00   23769/480023      gettime(timespec&) [21]
+                0.00    0.00   12877/246357      diff(timespec, timespec) [26]
+                0.00    0.00   12347/247002      getNanoseconds(timespec) [25]
+                0.00    0.00   12237/12237       SimpELEN::isEntirelyInCell(Edge*) [31]
+                0.00    0.00      70/9148        void std::vector<Edge, std::allocator<Edge> >::_M_realloc_insert<Edge const&>(__gnu_cxx::__normal_iterator<Edge*, std::vector<Edge, std::allocator<Edge> > >, Edge const&) [32]
+-----------------------------------------------
+                0.03    0.00   21823/21823       SimpQEM::updateEdgeCosts(Point*, int) [6]
+[7]     10.0    0.03    0.00   21823         SimpELEN::isCrownInCell(Point*) [7]
+-----------------------------------------------
+                0.03    0.00    1455/1455        SimpQEM::simplify(int, int) [2]
+[8]     10.0    0.03    0.00    1455         Surface::collapse(Edge&) [8]
+                0.00    0.00    6367/6384        SimpVertexClustering::initCells() [33]
+                0.00    0.00    4695/247002      getNanoseconds(timespec) [25]
+                0.00    0.00    4534/246357      diff(timespec, timespec) [26]
+                0.00    0.00    3991/351107      void std::vector<Face*, std::allocator<Face*> >::_M_realloc_insert<Face* const&>(__gnu_cxx::__normal_iterator<Face**, std::vector<Face*, std::allocator<Face*> > >, Face* const&) [23]
+                0.00    0.00    2240/187274      void std::vector<Edge*, std::allocator<Edge*> >::_M_realloc_insert<Edge* const&>(__gnu_cxx::__normal_iterator<Edge**, std::vector<Edge*, std::allocator<Edge*> > >, Edge* const&) [29]
+-----------------------------------------------
+                0.00    0.00    9269/113557      SimpQEM::updateEdgeCosts(Point*, int) [6]
+                0.01    0.00  104288/113557      SimpQEM::initEdgeCosts() [5]
+[9]      4.6    0.01    0.00  113557         SimpQEM::getCost(Edge*) [9]
+                0.00    0.00  113664/302476      copyQuadrics(double (*) [4], double (*) [4]) [10]
+                0.00    0.00  456254/480023      gettime(timespec&) [21]
+                0.00    0.00  228515/247002      getNanoseconds(timespec) [25]
+                0.00    0.00  227608/246357      diff(timespec, timespec) [26]
+                0.00    0.00  113926/113926      SimpELEN::setPlacement(Edge*) [30]
+                0.00    0.00  113385/323244      sumQuadrics(double (*) [4], double (*) [4]) [24]
+-----------------------------------------------
+                0.00    0.00    2985/302476      SimpQEM::simplify(int, int) [2]
+                0.00    0.00    3201/302476      void std::__adjust_heap<__gnu_cxx::__normal_iterator<Edge*, std::vector<Edge, std::allocator<Edge> > >, long, Edge, __gnu_cxx::__ops::_Iter_comp_iter<std::less<Edge> > >(__gnu_cxx::__normal_iterator<Edge*, std::vector<Edge, std::allocator<Edge> > >, long, long, Edge, __gnu_cxx::__ops::_Iter_comp_iter<std::less<Edge> >) [14]
+                0.00    0.00    8887/302476      SimpQEM::updateEdgeCosts(Point*, int) [6]
+                0.00    0.00  113664/302476      SimpQEM::getCost(Edge*) [9]
+                0.01    0.00  173739/302476      SimpQEM::initEdgeCosts() [5]
+[10]     3.3    0.01    0.00  302476         copyQuadrics(double (*) [4], double (*) [4]) [10]
+-----------------------------------------------
+                0.01    0.00       1/1           Surface::Surface(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [13]
+[11]     3.3    0.01    0.00       1         Surface::readSurface(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [11]
+                0.00    0.00  208370/472299      void std::vector<Point*, std::allocator<Point*> >::_M_realloc_insert<Point* const&>(__gnu_cxx::__normal_iterator<Point**, std::vector<Point*, std::allocator<Point*> > >, Point* const&) [22]
+                0.00    0.00  138763/351107      void std::vector<Face*, std::allocator<Face*> >::_M_realloc_insert<Face* const&>(__gnu_cxx::__normal_iterator<Face**, std::vector<Face*, std::allocator<Face*> > >, Face* const&) [23]
+-----------------------------------------------
+                0.01    0.00       1/1           main [1]
+[12]     3.3    0.01    0.00       1         Surface::saveOFF(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [12]
+-----------------------------------------------
+                0.00    0.01       1/1           main [1]
+[13]     3.3    0.00    0.01       1         Surface::Surface(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [13]
+                0.01    0.00       1/1           Surface::readSurface(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [11]
+                0.00    0.00       1/246357      diff(timespec, timespec) [26]
+-----------------------------------------------
+                0.00    0.00    2956/152205      SimpQEM::simplify(int, int) [2]
+                0.00    0.00  149249/152205      SimpELEN::initUniformGrid(int) [3]
+[14]     0.0    0.00    0.00  152205         void std::__adjust_heap<__gnu_cxx::__normal_iterator<Edge*, std::vector<Edge, std::allocator<Edge> > >, long, Edge, __gnu_cxx::__ops::_Iter_comp_iter<std::less<Edge> > >(__gnu_cxx::__normal_iterator<Edge*, std::vector<Edge, std::allocator<Edge> > >, long, long, Edge, __gnu_cxx::__ops::_Iter_comp_iter<std::less<Edge> >) [14]
+                0.00    0.00    3201/302476      copyQuadrics(double (*) [4], double (*) [4]) [10]
+-----------------------------------------------
+                0.00    0.00       8/25          main [1]
+                0.00    0.00      17/25          _GLOBAL__sub_I_main [40]
+[15]     0.0    0.00    0.00      25         frame_dummy [15]
+-----------------------------------------------
+                0.00    0.00   23769/480023      SimpQEM::updateEdgeCosts(Point*, int) [6]
+                0.00    0.00  456254/480023      SimpQEM::getCost(Edge*) [9]
+[21]     0.0    0.00    0.00  480023         gettime(timespec&) [21]
+-----------------------------------------------
+                0.00    0.00   55576/472299      SimpELEN::initUniformGrid(int) [3]
+                0.00    0.00  208353/472299      SimpQEM::initEdgeCosts() [5]
+                0.00    0.00  208370/472299      Surface::readSurface(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [11]
+[22]     0.0    0.00    0.00  472299         void std::vector<Point*, std::allocator<Point*> >::_M_realloc_insert<Point* const&>(__gnu_cxx::__normal_iterator<Point**, std::vector<Point*, std::allocator<Point*> > >, Point* const&) [22]
+-----------------------------------------------
+                0.00    0.00    3991/351107      Surface::collapse(Edge&) [8]
+                0.00    0.00  138763/351107      Surface::readSurface(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [11]
+                0.00    0.00  208353/351107      SimpQEM::initEdgeCosts() [5]
+[23]     0.0    0.00    0.00  351107         void std::vector<Face*, std::allocator<Face*> >::_M_realloc_insert<Face* const&>(__gnu_cxx::__normal_iterator<Face**, std::vector<Face*, std::allocator<Face*> > >, Face* const&) [23]
+-----------------------------------------------
+                0.00    0.00    1506/323244      SimpQEM::simplify(int, int) [2]
+                0.00    0.00  113385/323244      SimpQEM::getCost(Edge*) [9]
+                0.00    0.00  208353/323244      SimpQEM::initQuadrics() [4]
+[24]     0.0    0.00    0.00  323244         sumQuadrics(double (*) [4], double (*) [4]) [24]
+-----------------------------------------------
+                0.00    0.00    1445/247002      SimpQEM::simplify(int, int) [2]
+                0.00    0.00    4695/247002      Surface::collapse(Edge&) [8]
+                0.00    0.00   12347/247002      SimpQEM::updateEdgeCosts(Point*, int) [6]
+                0.00    0.00  228515/247002      SimpQEM::getCost(Edge*) [9]
+[25]     0.0    0.00    0.00  247002         getNanoseconds(timespec) [25]
+-----------------------------------------------
+                0.00    0.00       1/246357      Surface::Surface(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [13]
+                0.00    0.00    1337/246357      SimpQEM::simplify(int, int) [2]
+                0.00    0.00    4534/246357      Surface::collapse(Edge&) [8]
+                0.00    0.00   12877/246357      SimpQEM::updateEdgeCosts(Point*, int) [6]
+                0.00    0.00  227608/246357      SimpQEM::getCost(Edge*) [9]
+[26]     0.0    0.00    0.00  246357         diff(timespec, timespec) [26]
+-----------------------------------------------
+                0.00    0.00  208353/208353      SimpQEM::initQuadrics() [4]
+[27]     0.0    0.00    0.00  208353         Vector3f::cross(Vector3f*) [27]
+-----------------------------------------------
+                0.00    0.00  208353/208353      SimpQEM::initQuadrics() [4]
+[28]     0.0    0.00    0.00  208353         Vector3f::normalize() [28]
+-----------------------------------------------
+                0.00    0.00    2240/187274      Surface::collapse(Edge&) [8]
+                0.00    0.00  185034/187274      SimpQEM::initEdgeCosts() [5]
+[29]     0.0    0.00    0.00  187274         void std::vector<Edge*, std::allocator<Edge*> >::_M_realloc_insert<Edge* const&>(__gnu_cxx::__normal_iterator<Edge**, std::vector<Edge*, std::allocator<Edge*> > >, Edge* const&) [29]
+-----------------------------------------------
+                0.00    0.00  113926/113926      SimpQEM::getCost(Edge*) [9]
+[30]     0.0    0.00    0.00  113926         SimpELEN::setPlacement(Edge*) [30]
+-----------------------------------------------
+                0.00    0.00   12237/12237       SimpQEM::updateEdgeCosts(Point*, int) [6]
+[31]     0.0    0.00    0.00   12237         SimpELEN::isEntirelyInCell(Edge*) [31]
+-----------------------------------------------
+                0.00    0.00      18/9148        SimpQEM::initEdgeCosts() [5]
+                0.00    0.00      70/9148        SimpQEM::updateEdgeCosts(Point*, int) [6]
+                0.00    0.00    9060/9148        SimpELEN::initUniformGrid(int) [3]
+[32]     0.0    0.00    0.00    9148         void std::vector<Edge, std::allocator<Edge> >::_M_realloc_insert<Edge const&>(__gnu_cxx::__normal_iterator<Edge*, std::vector<Edge, std::allocator<Edge> > >, Edge const&) [32]
+-----------------------------------------------
+                0.00    0.00      17/6384        _GLOBAL__sub_I__ZN7SurfaceC2ENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE [49]
+                0.00    0.00    6367/6384        Surface::collapse(Edge&) [8]
+[33]     0.0    0.00    0.00    6384         SimpVertexClustering::initCells() [33]
+-----------------------------------------------
+                0.00    0.00      18/18          SimpQEM::initEdgeCosts() [5]
+[34]     0.0    0.00    0.00      18         void std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_M_realloc_insert<std::pair<int, int> >(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, std::pair<int, int>&&) [34]
+-----------------------------------------------
+                0.00    0.00      18/18          SimpQEM::initEdgeCosts() [5]
+[35]     0.0    0.00    0.00      18         void std::vector<double, std::allocator<double> >::_M_realloc_insert<double const&>(__gnu_cxx::__normal_iterator<double*, std::vector<double, std::allocator<double> > >, double const&) [35]
+-----------------------------------------------
+                0.00    0.00      18/18          SimpQEM::initEdgeCosts() [5]
+[36]     0.0    0.00    0.00      18         void std::vector<int, std::allocator<int> >::_M_realloc_insert<int>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int&&) [36]
+-----------------------------------------------
+                0.00    0.00      17/17          _GLOBAL__sub_I__Z4distP5PointS0_ [39]
+[37]     0.0    0.00    0.00      17         _GLOBAL__sub_I__Z10initMatrixPA4_i [37]
+                0.00    0.00      17/17          _GLOBAL__sub_I__Z4diff8timespecS_ [38]
+-----------------------------------------------
+                0.00    0.00      17/17          _GLOBAL__sub_I__Z10initMatrixPA4_i [37]
+[38]     0.0    0.00    0.00      17         _GLOBAL__sub_I__Z4diff8timespecS_ [38]
+                0.00    0.00      17/17          _GLOBAL__sub_I_main [40]
+-----------------------------------------------
+                0.00    0.00      17/17          _GLOBAL__sub_I__ZN20SimpVertexClusteringC2EP7Surfacei [48]
+[39]     0.0    0.00    0.00      17         _GLOBAL__sub_I__Z4distP5PointS0_ [39]
+                0.00    0.00      17/17          _GLOBAL__sub_I__Z10initMatrixPA4_i [37]
+-----------------------------------------------
+                0.00    0.00      17/17          _GLOBAL__sub_I__Z4diff8timespecS_ [38]
+[40]     0.0    0.00    0.00      17         _GLOBAL__sub_I_main [40]
+                0.00    0.00      17/25          frame_dummy [15]
+-----------------------------------------------
+                0.00    0.00       6/6           SimpQEM::simplify(int, int) [2]
+[41]     0.0    0.00    0.00       6         getMilliseconds(timespec) [41]
+-----------------------------------------------
+                0.00    0.00       2/2           main [1]
+[42]     0.0    0.00    0.00       2         std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&&, char const*) [42]
+-----------------------------------------------
+                0.00    0.00       1/1           _GLOBAL__sub_I__ZN7SurfaceC2ENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE [49]
+[43]     0.0    0.00    0.00       1         CGAL::Interval_nt<true>::Test_runtime_rounding_modes::Test_runtime_rounding_modes() [43]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[44]     0.0    0.00    0.00       1         SimpQEM::SimpQEM(Surface*, int) [44]
+                0.00    0.00       1/1           SimpELEN::SimpELEN(Surface*, int) [46]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[45]     0.0    0.00    0.00       1         Surface::~Surface() [45]
+-----------------------------------------------
+                0.00    0.00       1/1           SimpQEM::SimpQEM(Surface*, int) [44]
+[46]     0.0    0.00    0.00       1         SimpELEN::SimpELEN(Surface*, int) [46]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[47]     0.0    0.00    0.00       1         std::__cxx11::to_string(int) [47]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function is in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+Copyright (C) 2012-2022 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+Index by function name
+
+  [37] _GLOBAL__sub_I__Z10initMatrixPA4_i (SimpQEM.cpp) [6] SimpQEM::updateEdgeCosts(Point*, int) [27] Vector3f::cross(Vector3f*)
+  [38] _GLOBAL__sub_I__Z4diff8timespecS_ (common.cpp) [9] SimpQEM::getCost(Edge*) [28] Vector3f::normalize()
+  [39] _GLOBAL__sub_I__Z4distP5PointS0_ (SimpELEN.cpp) [2] SimpQEM::simplify(int, int) [32] void std::vector<Edge, std::allocator<Edge> >::_M_realloc_insert<Edge const&>(__gnu_cxx::__normal_iterator<Edge*, std::vector<Edge, std::allocator<Edge> > >, Edge const&)
+  [40] _GLOBAL__sub_I_main (Simp.cpp) [44] SimpQEM::SimpQEM(Surface*, int) [29] void std::vector<Edge*, std::allocator<Edge*> >::_M_realloc_insert<Edge* const&>(__gnu_cxx::__normal_iterator<Edge**, std::vector<Edge*, std::allocator<Edge*> > >, Edge* const&)
+  [24] sumQuadrics(double (*) [4], double (*) [4]) [11] Surface::readSurface(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [23] void std::vector<Face*, std::allocator<Face*> >::_M_realloc_insert<Face* const&>(__gnu_cxx::__normal_iterator<Face**, std::vector<Face*, std::allocator<Face*> > >, Face* const&)
+  [10] copyQuadrics(double (*) [4], double (*) [4]) [12] Surface::saveOFF(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [22] void std::vector<Point*, std::allocator<Point*> >::_M_realloc_insert<Point* const&>(__gnu_cxx::__normal_iterator<Point**, std::vector<Point*, std::allocator<Point*> > >, Point* const&)
+  [25] getNanoseconds(timespec) [8] Surface::collapse(Edge&) [34] void std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::_M_realloc_insert<std::pair<int, int> >(__gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >, std::pair<int, int>&&)
+  [41] getMilliseconds(timespec) [13] Surface::Surface(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [35] void std::vector<double, std::allocator<double> >::_M_realloc_insert<double const&>(__gnu_cxx::__normal_iterator<double*, std::vector<double, std::allocator<double> > >, double const&)
+  [26] diff(timespec, timespec) [45] Surface::~Surface()  [36] void std::vector<int, std::allocator<int> >::_M_realloc_insert<int>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int&&)
+  [21] gettime(timespec&)     [30] SimpELEN::setPlacement(Edge*) [47] std::__cxx11::to_string(int)
+  [33] SimpVertexClustering::initCells() [7] SimpELEN::isCrownInCell(Point*) [14] void std::__adjust_heap<__gnu_cxx::__normal_iterator<Edge*, std::vector<Edge, std::allocator<Edge> > >, long, Edge, __gnu_cxx::__ops::_Iter_comp_iter<std::less<Edge> > >(__gnu_cxx::__normal_iterator<Edge*, std::vector<Edge, std::allocator<Edge> > >, long, long, Edge, __gnu_cxx::__ops::_Iter_comp_iter<std::less<Edge> >)
+  [43] CGAL::Interval_nt<true>::Test_runtime_rounding_modes::Test_runtime_rounding_modes() [3] SimpELEN::initUniformGrid(int) [42] std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > std::operator+<char, std::char_traits<char>, std::allocator<char> >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&&, char const*)
+   [4] SimpQEM::initQuadrics() [31] SimpELEN::isEntirelyInCell(Edge*) [15] frame_dummy
+   [5] SimpQEM::initEdgeCosts() [46] SimpELEN::SimpELEN(Surface*, int)
